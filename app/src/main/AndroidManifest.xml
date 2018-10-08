@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.knu_study.project_ips">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tr_ed_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@android:style/Theme.Material.NoActionBar">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <!--
+            android:screenOrientation="portrait" 화면을 세로로 고정
+            android:excludeFromRecents="true" 최근 실행목록에서 지우기
+            android:clearTaskOnLaunch="true" 루트액티비티 (android.intent.action.MAIN) 말고 전부 지우기
+            android:launchMode="singleTask"
+            android:finishOnTaskLaunch="true" 이 옵션이 붙은 액티비티만 지우기
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="portrait"><!--화면을 세로로 고정-->
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="portrait"><!--화면을 세로로 고정-->
+        </activity>
+        <activity
+            android:name=".Splash_Extra_Endworld"
+            android:screenOrientation="portrait"><!--화면을 세로로 고정-->
+        </activity>
+
+    </application>
+</manifest>

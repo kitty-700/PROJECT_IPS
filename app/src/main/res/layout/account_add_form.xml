@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/add_account_replace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_add_form_notice"
+        android:background="#55000000"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:clickable="false"/><!--TITLE-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_form_ID"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/account_form_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/><!--ID-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_form_PW"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/account_form_PW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/><!--PW-->
+
+    <TextView
+        android:id="@+id/Memo_text_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_form_Memo"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/account_form_Memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/><!--Memo-->
+
+</LinearLayout>

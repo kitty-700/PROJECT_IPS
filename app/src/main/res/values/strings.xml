@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">2S2S</string>
+    <string name="basic_file_name">AQ.alz</string>
+    <string name="add_button"> + </string>
+
+    <string name="add_site_edit_hint">사이트 이름 입력</string>
+
+    <string name="site_change_form_title">사이트 변경</string>
+    <string name="site_change_form_site_name">사이트 이름</string>
+    <string name="site_change_form_site_delete">사이트 삭제</string>
+
+
+    <string name="account_add_form_title">계정 추가</string>
+    <string name="account_change_form_title">계정 수정</string>
+    <string name="account_form_ID">아이디</string>
+    <string name="account_form_PW">패스워드</string>
+    <string name="account_form_Memo">메모 (선택)</string>
+    <string name="accoun_change_form_account_delete">계정 삭제</string>
+    <string name="account_add_form_notice">계정 추가</string>
+
+
+    <string name="maker_name">kitty</string>
+    <string name="donate_msg_1">신한 110-411-143504</string>
+    <string name="donate_msg_2">(토스도 가능 ㅎ)</string>
+    <string name="maker_email">knukit@naver.com</string>
+    <string name="home_dir">cs14377@cs1.kangwon.ac.kr</string>
+</resources>

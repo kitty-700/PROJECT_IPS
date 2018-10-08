@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/includer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="fill">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/background_end"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="9"
+            android:scaleType="fitXY"
+            android:src="@drawable/background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#2D303030" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@null"
+            android:visibility="visible"><!--Material 기본 바탕색은 #2D303030-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/right_wall"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/right_building" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/left_wall"
+                android:layout_toRightOf="@+id/left_building"
+                android:src="@drawable/left_building_small" />
+
+            <ImageView
+                android:id="@+id/left_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/left_wall"
+                android:layout_alignParentStart="true"
+                android:scaleX="-1"
+                android:src="@drawable/left_building" />
+
+            <ImageView
+                android:id="@+id/left_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:scaleX="-1"
+                android:src="@drawable/wall" />
+
+            <ImageView
+                android:id="@+id/kitty"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_above="@+id/left_wall"
+                android:layout_toEndOf="@+id/imageView"
+                android:scaleX="-1"
+                android:src="@drawable/kitty" />
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/car" />
+
+            <ImageView
+                android:id="@+id/f1_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="90dp"
+                android:src="@drawable/f1_left" />
+
+            <ImageView
+                android:id="@+id/door"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/f1_left"
+                android:src="@drawable/closed_door" />
+
+            <ImageView
+                android:id="@+id/f1_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/door"
+                android:src="@drawable/f1_right" />
+
+            <ImageView
+                android:id="@+id/house_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/f1_left"
+                android:layout_alignStart="@+id/f1_left"
+                android:src="@drawable/center" />
+
+            <ImageView
+                android:id="@+id/f2_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/house_center"
+                android:layout_marginLeft="57dp"
+                android:src="@drawable/f2_left" />
+
+            <ImageView
+                android:id="@+id/f2_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/house_center"
+                android:layout_toEndOf="@+id/f2_left"
+                android:src="@drawable/f2_right" />
+
+            <ImageView
+                android:id="@+id/right_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/wall" />
+
+            <ImageView
+                android:id="@+id/right_wall2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/wall" />
+
+
+            <ImageView
+                android:id="@+id/yasuo"
+                android:layout_width="66dp"
+                android:layout_height="55dp"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/f2_left"
+                android:src="@mipmap/yasuo" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#2D303030" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/quote_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/quote_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="3dp"
+                android:background="#CC000000"
+                android:padding="15dp"
+                android:text="name"
+                android:textSize="15dp"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/quote_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/none" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quote"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#CC000000"
+            android:padding="15dp"
+            android:text="quote"
+            android:textSize="15dp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/developer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="fill"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:scaleType="fitXY"
+                android:src="@drawable/background" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#303030" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#44000000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:text="제작"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77000000"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/maker_name"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#44000000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:text="후원"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77000000"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/donate_msg_1"
+                android:textSize="25dp" />
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#77000000"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/donate_msg_2"
+            android:textSize="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#44000000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:text="제작자 이메일"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77000000"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/maker_email"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#44000000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:text="홈 디렉터리"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77000000"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/home_dir"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

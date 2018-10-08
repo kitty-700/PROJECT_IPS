@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#77000000</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#000000</color>
+    <color name="cautionButtonColor">#44FF0000</color>
+    <color name="siteNameColor">#00CCCC</color>
+    <color name="accountIDColor">#00CC00</color>
+</resources>
